@@ -24,3 +24,9 @@ a {
     background: black;
   }
 }
+
+/* Karl: Disabled error screen due to hydration issues in libraries used (the solana-react-adapter library has lazy-ass maintainers). 
+This is a bad idea for actual non-demo purposes so please remove this when using in actual development contexts. */
+nextjs-portal { 
+  display: none;
+}
