@@ -13,6 +13,7 @@ export function UserProfileManager() {
 
     if (loading) return <div>Loading...</div>;
 
+    // console.log("first name: ", userProfile.firstName)
     return (
         <div style={{ maxWidth: '500px', margin: 'auto' }}>
             {userProfile && (
