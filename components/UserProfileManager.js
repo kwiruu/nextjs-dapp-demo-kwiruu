@@ -10,6 +10,7 @@ export function UserProfileManager() {
     const handleEdit = () => {
         editUserProfile(firstName, lastName, parseInt(age, 10)); 
     };
+    
 
     if (loading) return <div>Loading...</div>;
 
