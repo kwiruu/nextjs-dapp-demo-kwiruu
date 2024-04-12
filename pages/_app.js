@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
             {mounted && 
             <>
                 <Head>
-                    <title>Demo App</title>
+                    <title>CIT-U SBC DEMO</title>
                 </Head>
                 <main>
                     <WalletConnectProvider>

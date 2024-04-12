@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #df9af7;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -29,4 +30,9 @@ a {
 This is a bad idea for actual non-demo purposes so please remove this when using in actual development contexts. */
 nextjs-portal { 
   display: none;
+}
+
+.shadow-box{
+  box-shadow: -12px 12px black, -12px 12px 0 1px #10162f;
+  border-radius: 5px;
 }
