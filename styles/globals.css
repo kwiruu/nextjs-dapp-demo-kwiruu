@@ -1,11 +1,10 @@
 html,
 body {
-  background-color: #df9af7;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+  }
 
 a {
   color: inherit;
@@ -35,4 +34,90 @@ nextjs-portal {
 .shadow-box{
   box-shadow: -12px 12px black, -12px 12px 0 1px #10162f;
   border-radius: 5px;
+}
+
+/* this is for the cat generator */
+
+.container-avatar{
+  width: 192px;
+  height: 192px;
+  border: 2px solid #512b08;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.avatar.fit {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar {
+  pointer-events: none;
+  user-select: none;
+  position: relative;
+  flex: 0 0 auto;
+  height: 100%;
+  width: 100%;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: pixelated;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 1000%;
+  background-size: 1000% 1000%;
+  z-index: 2;
+  clip-path: inset(0% 90% 90% 0%);
+  transform: translate(-10%, 0%);
+}
+
+.color-overlay-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 1000%;
+  background-size: 1000% 1000%;
+  z-index: 1;
+}
+
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.button-maker button{
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.window-box {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.window-box:hover {
+  box-shadow: -12px 12px #532d08, -12px 12px 0 1px #532d08; /* Apply box shadow on hover */
+  transform: translate(5px, -5px);
+}
+
+.window-box-button {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.window-box-button:hover {
+  box-shadow: -3px 3px #532d08, -3px 3px 0 1px #532d08; /* Apply box shadow on hover */
+  transform: translate(2px, -2px);
 }
